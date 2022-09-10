@@ -29,16 +29,17 @@
                             <h3>Read <span class="fw-bold"><i class="fa-solid fa-graduation-cap"></i> Siswa</span></h3>
 
                             <div>
-                                <a href="?menu=ekskul&page=read" class="btn btn-dark"><i class="fa-solid fa-left-long me-1"></i> Kembali</a>
+                                <a href="?menu=ekskul&page=read"><i class="fa-solid fa-left-long me-1"></i> Kembali</a>
                             </div>
 
                         </div>
 
                         <div class="card-body">
 
-                            <?php echo siswa_read_detail(); ?>
+                              <?php echo siswa_read_detail(); ?>
 
- 
+                          
+
                         </div>
 
                         <div class="card-footer">
