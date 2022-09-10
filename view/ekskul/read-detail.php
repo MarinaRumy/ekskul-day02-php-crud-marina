@@ -29,37 +29,16 @@
                             <h3>Read <span class="fw-bold"><i class="fa-solid fa-graduation-cap"></i> Siswa</span></h3>
 
                             <div>
-                                <a href="./siswa-read.html" class="btn btn-dark"><i class="fa-solid fa-left-long me-1"></i> Kembali</a>
+                                <a href="?menu=ekskul&page=read" class="btn btn-dark"><i class="fa-solid fa-left-long me-1"></i> Kembali</a>
                             </div>
 
                         </div>
 
                         <div class="card-body">
 
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <img src="./assets/img/user-male-1.png" alt="Picture" class="img img-thumbnail" style="width: 100px;">
-                                </li>
-                                <li class="list-group-item">
-                                    Nama Lengkap
-                                    <span class="d-block fw-bold">
-                                        Beri Pahabol
-                                    </span>
-                                </li>
-                                <li class="list-group-item">
-                                    Alamat Email
-                                    <span class="d-block fw-bold">
-                                        b.pahabol@mail.com
-                                    </span>
-                                </li>
-                                <li class="list-group-item">
-                                    Jenis Kelamin
-                                    <span class="d-block fw-bold">
-                                        Laki-Laki
-                                    </span>
-                                </li>
-                            </ul>
+                            <?php echo siswa_read_detail(); ?>
 
+ 
                         </div>
 
                         <div class="card-footer">

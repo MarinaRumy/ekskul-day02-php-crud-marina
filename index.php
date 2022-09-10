@@ -8,11 +8,25 @@
 
     elseif(isset($_GET['menu']) && $_GET['menu'] == 'ekskul'){
 
-        if(isset($_GET['page']) && $_GET['page'] == 'read-detail'){
-            include __DIR__ . './view/ekskul/read-detail.php';
-        } else {
+        if(isset($_GET['page']) && $_GET['page'] == 'read'){
+            
             include __DIR__ . './config/functions.php';
             include __DIR__ . './view/ekskul/read.php';
+
+        } elseif(isset($_GET['page']) && $_GET['page'] == 'read-detail') {
+
+            include __DIR__ . './config/functions.php';
+            include __DIR__ . './view/ekskul/read-detail.php';
+
+        } 
+        elseif(isset($_GET['page']) && $_GET['page'] == 'update') {
+
+            include __DIR__ . './config/functions.php';
+            include __DIR__ . './view/ekskul/update.php';
+
+        } 
+        else {
+            include __DIR__ . './view/404.php';   
         }
 
         
