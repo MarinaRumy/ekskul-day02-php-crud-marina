@@ -1,10 +1,10 @@
-<?php
+<?php 
 
-    //integrasi_koneksi
+    // integrasi koneksi
     require_once('connection.php');
 
     // Create database
-    $sql = "CREATE DATABASE sagu_foundation";
+    $sql = "CREATE DATABASE sacode_course";
     if (mysqli_query($conn, $sql)) {
         echo "Database created successfully";
     } else {
