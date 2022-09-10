@@ -95,31 +95,37 @@
             while($row = $result->fetch_assoc()) {
 
                 echo'
+                <form action="update&id=0" method="post">
                 <ul class="list-group">
                                     
-                    <li class="list-group-item">
-                        Judul
-                        <span class="d-block fw-bold">
-                            '. $row["judul"] .'
-                        </span>
-                    </li>
-                    <li class="list-group-item">
-                        Keterangan
-                        <span class="d-block fw-bold">
-                        '. $row["keterangan"] .'
-                        </span>
-                    </li>
+                <li class="list-group-item">
+                    Judul
+                    <span class="d-block fw-bold">
+                        '. $row["judul"] .'
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    Keterangan
+                    <span class="d-block fw-bold">
+                    '. $row["keterangan"] .'
+                    </span>
+                </li>
 
-                    <li class="list-group-item">
-                        <label for="nama-lengkap" class="form-label">Judul</label>
-                        <input type="text" name="Judul" class="form-control form-control-lg" value=" '. $row["judul"] .' ">
-                    </li>
-                    <li class="list-group-item">
-                        <label for="nama-lengkap" class="form-label">Keterangan</label>
-                        <input type="text" name="keterangan" class="form-control form-control-lg" value=" '. $row["keterangan"] .' ">
-                    </li>
-                    
-                </ul>
+                <li class="list-group-item">
+                    <label for="nama-lengkap" class="form-label">Judul</label>
+                    <input type="text" name="Judul" class="form-control form-control-lg" value=" '. $row["judul"] .' ">
+                </li>
+                <li class="list-group-item">
+                    <label for="nama-lengkap" class="form-label">keterangan</label>
+                    <input type="text" name="keterangan" class="form-control form-control-lg" value=" '. $row["keterangan"] .' ">
+                </li>
+                <li class="list-group-item">
+                <button type="submit" class="btn btn-lg btn-success w-100"><i class="fa-solid fa-pencil me-2"></i> Update</button>
+                </li>
+                
+            </ul>
+                </form>
+
 
                 ';
 

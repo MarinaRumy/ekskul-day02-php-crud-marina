@@ -38,9 +38,7 @@
 
                     </div>
 
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-lg btn-success w-100"><i class="fa-solid fa-pencil me-2"></i> Update</button>
-                    </div>
+                  
 
                 </div>
 
